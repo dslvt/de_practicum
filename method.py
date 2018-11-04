@@ -29,7 +29,7 @@ class Method():
         last_h = self.h
         for i in range(startn, finishn+1):
             self.h = i
-            self.step = (self.X - self.x0) / i
+            self.step = (self.X - self.x0) / float(i)
             lerror = self.local_error()
             errory.append(lerror[-1])
             errorx.append(i)

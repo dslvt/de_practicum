@@ -9,7 +9,8 @@ class Improved_euler(Method):
         x = [self.x0]
         y = [self.y0]
         for i in range(int(self.h)):
-            yn = y[-1] + self.step * (self.f(x[-1], y[-1]) + self.f(x[-1] + self.step, y[-1] + self.step * self.f(x[-1], y[-1]))) / 2.0
+            yn = y[-1] + self.step * (self.f(x[-1], y[-1]) + self.f(x[-1] + self.step,
+                                            y[-1] + self.step * self.f(x[-1], y[-1]))) / 2.0
             x.append(x[-1]+self.step)
             y.append(yn)
         return x, y

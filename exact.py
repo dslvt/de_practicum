@@ -12,3 +12,5 @@ class Exact(Method):
             y.append(self.solution(x[-1]+self.step))
             x.append(x[-1]+self.step)
         return x, y
+
+
